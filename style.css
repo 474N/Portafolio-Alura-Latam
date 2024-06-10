@@ -138,6 +138,15 @@ section.skills{
     align-content: end;
 }
 
+.skills__img{
+    padding-bottom: 8px;
+}
+
+.skills__name{
+    font-size: 16px;
+    font-weight: bold;
+}
+
 /*Sección Hobbies*/
 
 section.hobbies{
@@ -162,6 +171,15 @@ section.hobbies{
     height: 174px;
     background-color: white;
     align-content: end;
+}
+
+.hobbies__img{
+    padding-bottom: 8px;
+}
+
+.hobbies__name{
+    font-size: 16px;
+    font-weight: bold;
 }
 
 /* Experiencia Académica*/
@@ -198,12 +216,18 @@ section.academic{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 20%;
+    margin-top: 50px;
+    width: 40%;
+}
+
+.academic__courses__item__img img{
+    height: 155px;
+    width: 180px;
 }
 
 .academic__courses__item__title{
     display: flex;
-    padding-top: 100px;
+    padding-top: 30px;
     font-size: 22px;
     margin: 8px 0px 0px ;
 }
@@ -220,8 +244,29 @@ section.experience{
     padding: 20px 100px;
 }
 
+.experience__section__title{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
 .experiencie__box{
     display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.experiencie__box:nth-child(even){
+    flex-direction: row;
+}
+
+.experiencie__box:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
+.experience__img{
+    width: 40%;
 }
 
 
